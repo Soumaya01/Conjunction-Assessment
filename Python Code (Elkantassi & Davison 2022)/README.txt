@@ -35,7 +35,7 @@ To elaborate on each function within the modules and provide a clearer understan
 - `Pc2D_Foster(r, v, cov, HBR, HBRType, RelTol)`: Implements an alternative method for calculating 2D collision probabilities, according to the method of Foster.
 
 ### `tem_xD.py`
-- `tem_2D(...)`, `tem_3D(...)`, `tem_6D(...)`: Applies the tangent exponential model across two, three, and six dimensions. These functions compute first-order pivots like the likelihood root and the Wald statistic, and a third-order pivot which is the modified likelihood root. In two dimensions, the function also offers a Bayesian counterpart of the modified likelihood root using a uniform prior. These pivots are used to test the null hypothesis that the miss distance is below a threshold value, aiding in the assessment of collision risks.
+- `tem_2D(...)`, `tem_6D(...)`: Applies the tangent exponential model across two and six dimensions. These functions compute first-order pivots like the likelihood root and the Wald statistic, and a third-order pivot which is the modified likelihood root. In both dimensions, the functions also offer a Bayesian counterpart of the modified likelihood root using a uniform prior. These pivots are used to test the null hypothesis that the miss distance is below a threshold value, aiding in the assessment of collision risks.
 
 ### `plot_TEM.py`
 - `plot_prob(...)`: Visualizes the evidence function (1 - significance function) and the pivots as functions of the miss distance parameter. This function provides graphical representations that help interpret the analytical outcomes, making it easier to understand the implications of the modeled encounter scenarios.
@@ -46,7 +46,6 @@ To elaborate on each function within the modules and provide a clearer understan
 
 ### Subfolders
 - `/CARA scenarios/`: This folder contains predefined scenarios available for analysis. The scenarios are adapted from the open-source NASA repository, which provides data for simulation and testing purposes.
-
 - `/figures/`: This folder is designated for storing output figures generated during the analysis. It includes visualizations cited in the 2023 article by Elkantassi and Davison.
 
 ### Scripts
